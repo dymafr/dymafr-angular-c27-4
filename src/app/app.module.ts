@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './shared/modules/material.module';
+import { StoreModule } from '@ngrx/store';
 
 @NgModule({
   declarations: [AppComponent],
@@ -13,6 +14,7 @@ import { MaterialModule } from './shared/modules/material.module';
     FormsModule,
     BrowserAnimationsModule,
     MaterialModule,
+    StoreModule.forRoot({}, {}),
   ],
   bootstrap: [AppComponent],
 })
