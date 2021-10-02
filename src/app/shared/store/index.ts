@@ -1,5 +1,5 @@
 import { Action, ActionReducerMap } from '@ngrx/store';
-import { createReducer } from '@ngrx/store/src/reducer_creator';
+import { createReducer } from '@ngrx/store';
 import { Todo } from '../interfaces/todo.interface';
 
 export interface AppState {
