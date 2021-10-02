@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './shared/modules/material.module';
 import { StoreModule } from '@ngrx/store';
+import { ROOT_REDUCERS } from './shared/store';
 
 @NgModule({
   declarations: [AppComponent],
@@ -14,7 +15,7 @@ import { StoreModule } from '@ngrx/store';
     FormsModule,
     BrowserAnimationsModule,
     MaterialModule,
-    StoreModule.forRoot({}, {}),
+    StoreModule.forRoot(ROOT_REDUCERS),
   ],
   bootstrap: [AppComponent],
 })
